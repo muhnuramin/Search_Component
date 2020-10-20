@@ -1,11 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Search} from "./components/Search"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hallo Word</h1>
+    <div>
+      <h1>Daftar Mahasiswa</h1>
+     <Search 
+     label="Cari Mahasiswa " 
+     placeholder="nama"/>
+     <h1>Daftar Domisili</h1>
+     <Search 
+     label="Cari Mahasiswa "
+     placeholder="domisili"/>
     </div>
   );
 }
