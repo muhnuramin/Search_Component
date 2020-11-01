@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 // props=properti
 export function Search(props){
@@ -31,47 +32,21 @@ export function Search(props){
 
 
     return(
-        <div style={{fontFamily:"sans-serif",fontSize:14}}>
+        <div className="Container">
             <label>
-            <div style={{marginBottom:5}}>{props.label}</div>
-            <div
-            style={{
-                border:"solid 1px #aaa",
-                borderRadius:3,
-                padding:"5px 10px",
-                width:"200px",
-                dispaly:"inline-block"
-            }}
-            >
+            <div>{props.label}</div>
+            <div className="Pembungkus">
             <input id="search" 
             onChange={inputOnChange} 
             type="text" 
             placeholder={props.placeholder} 
-            value={value}
-            style={{
-                border:"none",
-                outline:"none"
-            }}
-            ></input>
-            {value.length >0 &&<button onClick={ButtonClear}
-            style={{
-                background:"transparent",
-                border:"none",
-                outline:"none",
-                fontSize:17,
-                cursor:"pointer"
-            }}
-            >&times;</button>}
-
+            value={value}></input>
+            {value.length >0 &&<button className="Clear" onClick={ButtonClear}>&times;</button>}
             </div>
+            <button className="Klik"onClick={ButtonClick}>Cari</button>
+            
             </label>
-            <button style={{
-                background:"Blue",
-                border:"none",
-                dispaly:"inline",
-                padding:10,
-                marginTop:10
-            }} onClick={ButtonClick}>Cari</button>
+            
 
             
             <ul>
@@ -79,13 +54,7 @@ export function Search(props){
                     return <li>{nama}</li>
                 })}
             </ul>
-
-
-            </div>
-
-            
-           
-        
+        </div>
     );
 
 }

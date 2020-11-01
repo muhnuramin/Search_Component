@@ -1,5 +1,42 @@
-.App{
-  background-color: Black;
-  color: White;
-  font-size: 50px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-weight: 10px;
+}
+
+.Container{
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.Pembungkus{
+  border:1px solid #aaa;
+  padding: 5px 10px;
+  width: 200px;
+  height: 20px;
+  border-radius: 4px;
+  display: inline-block;
+}
+input{
+  border:none;
+  outline:none;
+}
+.Clear{
+  background: transparent;
+  border:none;
+  outline:none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.Klik{
+  background: rgb(9, 172, 9);
+  border: none;
+  padding: 7px;
+  margin-top: -10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
